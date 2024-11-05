@@ -102,3 +102,79 @@
     margin: 0;
     padding: 0;
 }
+
+
+.company-infor-body-section 
+.company-infor-body-section-body {
+    max-height: auto;
+}
+
+
+
+.company-infor-body-section.active 
+.company-infor-body-section-body{
+    max-height: 150px;
+    overflow: hidden;
+}
+
+
+
+.company-infor-body-section-body{
+    transition: all linear 0.3s;
+}
+
+
+.company-infor-body-section.active .showmore {
+    display: block;
+}
+
+.company-infor-body-section .showmore {
+    display: none;
+}
+
+
+.company-infor-body-section.active .seeless {
+    display: none;
+}
+
+.company-infor-body-section .seeless {
+    display: block;
+}
+
+.seeless,
+.showmore {
+    padding: 0 15px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(158, 85, 85);
+    margin: 0;
+    user-select: none;
+    padding: 20px 15px;
+
+}
+
+
+.seeless:hover,
+.showmore:hover {
+    cursor: pointer;
+}
+
+.showmore-blur {
+    display: none;
+}
+
+.company-infor-body-section.active .showmore-blur {
+    display: block;
+}
+
+.show-more-action {
+    position: relative;
+}
+
+.show-more-action .showmore-blur {
+    position: absolute;
+    top:-70%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),#f0f0f0);
+    height: 40px;
+    width: 100%;
+}
